@@ -1,0 +1,88 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-image: url(./gradient-bg.jpg);
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: 100% 100%;
+
+}
+
+.game-info{
+    background-color: rgb(255, 255, 255, 0.15);
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+.tic-tac-toe{
+    width: 90%;
+    max-width: 16rem;
+    background-color: rgb(255, 255, 255, 0.15);
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;                      /* for squarish shape*/
+    padding: 20px;
+
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.box1,.box2,.box4,.box5{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.15);
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: white;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+.win{
+    background-color: green;
+}
+
+.active{
+    display: flex;
+    opacity: 1;
+}
