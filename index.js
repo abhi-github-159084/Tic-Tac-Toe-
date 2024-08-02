@@ -1,3 +1,4 @@
+
 const boxes = document.querySelectorAll(".box");
 const gameInfo = document.querySelector(".game-info");
 const newGameBtn = document.querySelector(".btn");
@@ -112,5 +113,3 @@ boxes.forEach((box, index) => {
         handleClick(index);
     })
 });
-
-newGameBtn.addEventListener("click", initGame);
