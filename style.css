@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    background-image: url(./assets/gradient-bg.jpg);
+    background-image: url(./resource/gradient-bg.jpg);
     display: grid;
     place-items: center;
     overflow-x: hidden;
