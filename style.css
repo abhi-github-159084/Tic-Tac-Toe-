@@ -8,7 +8,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    background-image: url(./gradient-bg.jpg);
+    background-image: url(./assets/gradient-bg.jpg);
     display: grid;
     place-items: center;
     overflow-x: hidden;
@@ -70,11 +70,11 @@
     border-radius: 1rem;
     padding: 0.5rem 2rem;
     cursor: pointer;
-    color: white;
+    color: black;
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
-    display: none;
+    /* display: none; */
 }
 
 
